@@ -15,8 +15,7 @@ export function Hero() {
             </p>
             <div className="absolute bottom-5 hover:text-lg hover:font-medium transition-all">
                 <a className="flex flex-col items-center" href="">
-                    <p className="text-center text-md">Empieza el viaje</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="animate-bounce w-14 h-14 hover:w-16 hover:h-16 transition-all " viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                       <path d="M6 9l6 6l6 -6" />
                     </svg>
