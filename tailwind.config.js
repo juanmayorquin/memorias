@@ -30,11 +30,24 @@ export default {
       '8xl': '5.5rem',
       '9xl': '8rem',
       },
+      screens: {
+        'xs': '475px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+      },
     extend: {
       keyframes: {
         'breathe': {
-          '0%, 100%': { transform: 'scale(0.7)' , filter: 'blur(3px)' },
-          '50%': { transform: 'scale(1)' , filter: 'blur(0px)' },
+          '0%, 100%': {
+            transform: 'scale(0.7)' , 
+            filter: 'blur(3px)'
+          },
+          '50%': {
+            transform: 'scale(1)' ,
+            filter: 'blur(0px)' 
+          },
         }
       },
       animation: {
