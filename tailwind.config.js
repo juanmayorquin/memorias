@@ -30,7 +30,19 @@ export default {
       '8xl': '5.5rem',
       '9xl': '8rem',
       },
-    extend: {},
+    extend: {
+      keyframes: {
+        'breathe': {
+          '0%, 100%': { transform: 'scale(0.7)' , filter: 'blur(3px)' },
+          '50%': { transform: 'scale(1)' , filter: 'blur(0px)' },
+        }
+      },
+      animation: {
+        'breathe-5': 'breathe 5s ease-in-out infinite',
+        'breathe-7': 'breathe 7s ease-in-out infinite',
+        'breathe-9': 'breathe 9s ease-in-out infinite',
+      },
+    },
   },
   plugins: [
     require('tailwindcss-animated')
