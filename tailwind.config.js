@@ -41,8 +41,8 @@ export default {
       keyframes: {
         'breathe': {
           '0%, 100%': {
-            transform: 'scale(0.7)' , 
-            filter: 'blur(3px)'
+            transform: 'scale(0.6)' , 
+            filter: 'blur(5px)'
           },
           '50%': {
             transform: 'scale(1)' ,
