@@ -3,23 +3,23 @@ export function Hero() {
     <section>
       <div className="z-50 h-screen flex flex-col bg-gradient-to-br from-white to-gray-300 items-center justify-center relative animate-fade animate-once animate-duration-1000 animate-delay-300">
         <div className="text-center">
-          <h1 className="font-semibold flex items-center tracking-widest text-5xl xs:text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
+          <h1 className="font-semibold flex items-center animate-fade animate-delay-500 tracking-widest text-5xl xs:text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
             <span className="animate-breathe-5 transition-all animate-delay-0">
               M
             </span>
             <span className="animate-breathe-7 transition-all animate-delay-200">
               E
             </span>
-            <span className="animate-breathe-9 transition-all animate-delay-100">
+            <span className="animate-breathe-9 transition-all animate-delay-500">
               M
             </span>
-            <span className="animate-breathe-5 transition-all animate-delay-100">
+            <span className="animate-breathe-5 transition-all animate-delay-300">
               O
             </span>
-            <span className="animate-breathe-9 transition-all animate-delay-200">
+            <span className="animate-breathe-9 transition-all animate-delay-300">
               R
             </span>
-            <span className="animate-breathe-5 transition-all animate-delay-200">
+            <span className="animate-breathe-5 transition-all animate-delay-0">
               I
             </span>
             <span className="animate-breathe-7 transition-all animate-delay-0">
