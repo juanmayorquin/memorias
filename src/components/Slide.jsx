@@ -15,7 +15,7 @@ export function Slide({ year, text, backgroundImage, image, alt, color}) {
   return (
     <div className="  h-screen w-screen min-w-full max-h-screen relative animate-fade animate-once animate-duration-1000 animate-delay-300 flex items-center">
       {
-        profile.img && <img className="absolute top-0 left-0 z-20" src={profile.img} alt="profile" />
+        profile.img && <img className="absolute bottom-0 left-[30%] h-[45vh] z-20" src={profile.img} alt="profile" />
       }
         
       <div className="h-full w-full absolute blur" style={bgImage}></div>

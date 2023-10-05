@@ -42,7 +42,7 @@ export function Hero() {
             <span className="font-bold">historias</span>
           </p>
         </div>
-        <div onClick={handleScroll} className="absolute bottom-5 hover:text-lg hover:font-medium transition-all animate-fade-down animate-delay-[1700ms]">
+        <div onClick={handleScroll} className="absolute bottom-5 hover:text-lg hover:font-medium hover:cursor-pointer transition-all animate-fade-down animate-delay-[1700ms]">
           <a className="scroll-smooth flex flex-col items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
