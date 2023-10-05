@@ -23,7 +23,6 @@ export function Landing() {
         slidesPerView={1}
         mousewheel={false}
         direction="horizontal"
-        cssMode={true}
         draggable={true}
       >
         <SwiperSlide>
