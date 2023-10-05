@@ -1,4 +1,11 @@
 export function Hero() {
+  const handleScroll = () =>{
+    const selector = document.getElementById("selector")
+
+    if (selector) {
+      selector.scrollIntoView({ behavior: 'smooth' });
+  }
+  }
   return (
     <section className="snap-start">
       <div className="h-screen flex flex-col bg-gradient-to-br from-white to-gray-300 items-center justify-center relative animate-fade animate-once animate-duration-1000 animate-delay-300">
@@ -35,17 +42,17 @@ export function Hero() {
             <span className="font-bold">historias</span>
           </p>
         </div>
-        <div className="absolute bottom-5 hover:text-lg hover:font-medium transition-all animate-fade-down animate-delay-[1700ms]">
-          <a className="flex flex-col items-center">
+        <div onClick={handleScroll} className="absolute bottom-5 hover:text-lg hover:font-medium transition-all animate-fade-down animate-delay-[1700ms]">
+          <a className="scroll-smooth flex flex-col items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="motion-safe:animate-pulse animate-duration-1000 w-14 h-14 hover:w-16 hover:h-16 hover:animate-none transition-all "
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="#000000"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M6 9l6 6l6 -6" />

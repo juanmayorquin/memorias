@@ -6,6 +6,8 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+
+
 @layer utilities {
   @variants responsive {
     /* Hide scrollbar for Chrome, Safari and Opera */
