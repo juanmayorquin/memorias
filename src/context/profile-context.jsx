@@ -5,6 +5,13 @@ export const profileContext = createContext();
 
 // eslint-disable-next-line react/prop-types
 export const ProfileProvider = ({ children }) => {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const updateModal = (e) => {
+    if(e.target.id === "video") return;
+    setIsOpenModal(!isOpenModal);
+  };
+
   const [profile, setProfile] = useState({name:"",img:""});
 
   const handleScroll = (id) => {
@@ -21,7 +28,7 @@ export const ProfileProvider = ({ children }) => {
   };
 
   return (
-    <profileContext.Provider value={{ profile, updateProfile }}>
+    <profileContext.Provider value={{ profile, updateProfile, isOpenModal, updateModal }}>
       {children}
     </profileContext.Provider>
   );
