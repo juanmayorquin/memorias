@@ -2,8 +2,8 @@ import { useContext } from "react";
 import { profileContext } from "../context/profile-context";
 export function Selector() {
   const profiles = [
-    { name: "Estudiante", img: "/img/student.webp" },
-    { name: "Docente", img: "/img/teacher.webp" },
+    { name: "Estudiante", img: "./img/student.webp" },
+    { name: "Docente", img: "./img/teacher.webp" },
   ];
 
   const { updateProfile } = useContext(profileContext);

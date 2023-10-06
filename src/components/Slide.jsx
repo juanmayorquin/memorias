@@ -28,13 +28,13 @@ export function Slide({slide}) {
     backgroundColor: color,
   };
   const bgImage = {
-    backgroundImage: `url(/img/slides/${year}.jpg)`,
+    backgroundImage: `url(./img/slides/${year}.jpg)`,
     backgroundSize: "cover",
   };
   return (
     <div className="  h-screen w-screen min-w-full max-h-screen relative animate-fade animate-once animate-duration-1000 animate-delay-300 flex items-center">
       
-      {isOpenModal && <Modal video={`/vid/${year}.mp4`} />}
+      {isOpenModal && <Modal video={`./vid/${year}.mp4`} />}
 
       <div className="h-full w-full absolute blur" style={bgImage}></div>
       <div className="h-full w-full absolute opacity-10" style={bgColor}></div>
@@ -93,7 +93,7 @@ export function Slide({slide}) {
           </button>}
           <img
             className="hidden absolute w-[90%] bottom-0 xl:block  md:w-[70%] lg:w-[40%] lg:right-0 transition-all"
-            src={`/img/slides/${year}.png`}
+            src={`./img/slides/${year}.png`}
             alt={alt}
           />
         </div>
